@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Lekton';
+  background-color: #f8eeee;
+}
+#home{
+  background-image: url(../src//assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+::-webkit-scrollbar {
+  width: 11px; 
+  scrollbar-width: thin; 
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1d1c1c; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-track {
+  -color: rgb(42, 42, 42); 
+  background-color: #fff rgb(42, 42, 42);
+}
+
+
+/* #home{
+    background:
+        linear-gradient(to right, transparent 1%, #B7ACAC 1%, #B7ACAC 2%, transparent 2%) 0 0,
+        linear-gradient(to bottom, transparent 1%, #B7ACAC 1%, #B7ACAC 2%, transparent 2%) 0 0;
+    background-size: 17% 20%;
+    background: linear-gradient(to bottom, #F6EEEE, rgba(229, 229, 229, 100)) cover;
+
+} */
+
+/* lekton-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Lekton';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/fonts/lekton-v17-latin-regular.woff2') format('woff2'); 
+}
+/* lekton-italic - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Lekton';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../src/fonts/lekton-v17-latin-italic.woff2') format('woff2'); 
+}
+/* lekton-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Lekton';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../src/fonts/lekton-v17-latin-700.woff2') format('woff2'); 
+}
+
+
+/* BUTTON */
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+.cta span {
+  padding-bottom: 4px;
+  letter-spacing: 4px;
+  padding-right: 15px;
+
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  margin-bottom: 4px;
+  color: currentColor;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  /* color: black; */
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
