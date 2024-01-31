@@ -1,0 +1,64 @@
+{
+    "projects": [
+        {
+            "id" :1,
+            "title": "Barbers Shop",
+            "date": "jan. 2024",
+            "image": "/projectsimg/barbershop.png",
+            "description": "WeatherBy is a user-friendly weather application that delivers real-time weather updates. Users can effortlessly check the current weather, 5-day forecast, and more.",
+            "techFirst": "React.js",
+            "techSecond": "TailwindCSS",
+            "codeurl": "https://github.com/tidzi17/barbers-shop",
+            "liveurl": "https://barbers-shop.vercel.app/"
+        },
+   
+        {
+            "id" :3,
+            "title": "Real Estate",
+            "date": "sep. 2023",
+            "image": "/projectsimg/harmony.png",
+            "description": "Harmony Residence, a real estate project, offers an apartment showcase along with a user-friendly mortgage calculator. This feature allows users to explore available living spaces and plan their finances efficiently.",
+            "techFirst": "React.js",
+            "techSecond": "SCSS",
+            "codeurl": "https://github.com/tidzi17/real-estate-project",
+            "liveurl": "https://harmony-real-estate.vercel.app/"
+        },
+        {
+            "id" :4,
+            "title": "First Portfolio",
+            "date": "sep. 2023",
+            "image": "/projectsimg/oldportfolio.png",
+            "imageID": "old-portfolio",
+            "description": "Harmony Residence, a real estate project, offers an apartment showcase along with a user-friendly mortgage calculator. This feature allows users to explore available living spaces and plan their finances efficiently.",
+            "techFirst": "React.js",
+            "techSecond": "SCSS",
+            "codeurl": "https://github.com/tidzi17/portfolio",
+            "liveurl": "https://tijanadj.vercel.app/"
+        },
+        {
+            "id" :2,
+            "title": "Weather App",
+            "date": "nov. 2023",
+            "image": "/projectsimg/weather-app.png",
+            "imageID": "weather-app",
+            "description": "WeatherBy is a user-friendly weather application that delivers real-time weather updates. Users can effortlessly check the current weather, 5-day forecast, and more.",
+            "techFirst": "VanillaJS",
+            "techSecond": "SCSS",
+            "codeurl": "https://github.com/tidzi17/weather-app",
+            "liveurl": "https://weatherby.vercel.app/"
+        },
+        {
+            "id":5,
+            "title": "Rent a car",
+            "date": "jul. 2023",
+            "image": "/projectsimg/carrental.png",
+            "description": "DriveXcellence is an exclusive rent-a-car platform designed for luxury enthusiasts. Offering a wide range of sports vehicles, the website provides users with a seamless search and booking process.",
+            "techFirst": "React.js",
+            "techSecond": "VanillaCSS",
+            "codeurl": "https://github.com/tidzi17/car-rental-app",
+            "liveurl": "https://drivexcellence-rent-a-car.vercel.app/"
+        }
+    ]
+
+    
+}

@@ -1,24 +1,34 @@
 import { FaGithubSquare } from "react-icons/fa";
 import { RiExternalLinkLine } from "react-icons/ri";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 
 
-
-export default function ProjectCard(){
+export default function ProjectCard({ id, title, date, image, imageID, description, techFirst, techSecond, codeurl, liveurl    }){
+    const isScrollableImage = imageID !== "weather-app" && imageID !== "old-portfolio";
     return(
-        <div className="w-[700px] h-[230px] border-[1px] border-black rounded-3xl p-4 flex flex-row gap-3 justify-between">
-            <div className="w-1/2 bg-black rounded-3xl">s</div>
+        <div className="w-full h-[230px] border-[1px] border-black rounded-3xl p-4 flex flex-row gap-3 justify-between">
+               {isScrollableImage ? (
+                <div className="w-1/2 h-full bg-black rounded-3xl overflow-hidden cursor-pointer">
+                    <img src={image} alt="" className="scrolling-image w-full h-auto transform translate-x-0 transition duration-[10s] ease-in-out hover:-translate-y-[1300px] " />
+                </div>
+            ) : (
+                <div className="w-1/2 h-full bg-black rounded-3xl relative">
+                    <img src={image} alt="" className="absolute inset-0 w-full h-full object-cover  rounded-3xl" />
+                </div>
+            )}
             <div className="w-1/2 flex flex-col items-center text-center">
-                <h4 className="font-bold">Project title</h4>
-                <p className="text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, rem laboriosam deserunt nulla deleniti cum voluptates corporis maiores ratione </p>
-                <p className="text-base mt-1">Stack: <span>React.js</span> <span>TailwindCSS</span></p>
+                <h4 className="font-bold">{title}</h4>
+                <p className="text-sm mt-1">{description}</p>
+                <p className="text-base mt-1">Stack: <span>{techFirst}</span> <span>{techSecond}</span></p>
                 <div className="flex gap-5 mt-auto">
                     <div className="flex items-center">
-                        <FaGithubSquare className="text-3xl"/>
+                       <a href={codeurl} target="blank"><FaGithubSquare className="text-3xl transform ease-in duration-300 hover:scale-110"/></a> 
                         <p className="text-lg">code</p>
                     </div>
                     <div className="flex items-center">
-                        <RiExternalLinkLine  className="text-3xl"/>
+                        <a href={liveurl} target="blank"><RiExternalLinkLine  className="text-3xl transform ease-in duration-300 hover:scale-110"/></a>
                         <p className="text-lg">preview</p>
                     </div>
                 </div>
@@ -26,3 +36,16 @@ export default function ProjectCard(){
         </div>
     )
 }
+
+ProjectCard.propTypes = {
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    imageID: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    techFirst: PropTypes.string.isRequired,
+    techSecond: PropTypes.string.isRequired,
+    codeurl: PropTypes.string.isRequired,
+    liveurl: PropTypes.string.isRequired,
+};
