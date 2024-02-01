@@ -15,7 +15,7 @@ export default function Home(){
                 <Link  to="#portfolio" smooth><Button text="Check out my work"/></Link> 
                 </div>
             </div>
-            <div className="absolute bottom-10 left-5 right-0 ">
+            <div className="absolute bottom-10 left-5 right-0 w-fit">
         <p className="text-9xl font-bold text-black opacity-5">[0]</p>
       </div>
       <div className="absolute bottom-10 right-20">

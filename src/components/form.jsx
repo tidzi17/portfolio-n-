@@ -79,7 +79,7 @@ const Form = () => {
         {isSubmitted && (
                <div ref={messageBoxRef} onClick={() => setIsSubmitted(false)} className="fixed top-0 left-0 w-full h-full bg-black/50 backdrop-blur-sm z-30 flex justify-center items-center">
                <div className="w-96 h-[500px] p-8 bg-zinc-900 shadow-zinc-800 shadow-sm rounded-lg ">
-                <div className="flex flex-col items-center text-center relative">
+                <div className="flex flex-col items-center text-center relative mb-10">
                 <p className="text-white">Message sent!</p>
                 </div>
                  <img src={avatar} alt=""/>
