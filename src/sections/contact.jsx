@@ -10,7 +10,7 @@ export default function Contact(){
               <div className="absolute bottom-10 left-5 right-0 ">
         <p className="text-9xl font-bold text-black opacity-5">[3]</p>
       </div>
-      <div className="w-full px-6 lg:px-28 py-28 ">
+      <div className="w-full px-6 xl:px-28 py-28 ">
       <div>
             <div className="w-[80px] md:w-[120px] h-[2px] bg-black mb-4"></div>
             <h3 className="text-black text-2xl md:text-4xl">get in touch</h3>

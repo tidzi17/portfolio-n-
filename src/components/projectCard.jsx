@@ -22,7 +22,7 @@ export default function ProjectCard({ id, title, date, image, imageID, descripti
             )}
             <div className="w-1/2 flex flex-col items-center text-center">
                 <h4 className="font-bold">{title}</h4>
-                <p className="text-sm mt-1">{description}</p>
+                <p className="text-xs md:text-sm mt-1">{description}</p>
                 <p className="text-base mt-1">Stack: <span>{techFirst}</span> <span>{techSecond}</span></p>
                 <div className="flex gap-5 mt-auto">
                     <div className="flex gap-2 items-center">

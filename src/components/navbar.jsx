@@ -24,7 +24,7 @@ export default function Navbar(){
 
     return(
         <div id="navbar" className="absolute">
-            <nav style={{ borderBottom: '1px solid ' + border, backgroundColor: bgColor }} className="w-full fixed z-20 flex justify-between px-6 items-center py-3 lg:pb-3 lg:pt-5 lg:px-28">
+            <nav style={{ borderBottom: '1px solid ' + border, backgroundColor: bgColor }} className="w-full fixed z-20 flex justify-between px-6 items-center py-3 xl:pb-3 xl:pt-5 xl:px-28">
             <div>
                 <Link to='#home' smooth className="font-bold text-7xl">t.</Link>
             </div>
