@@ -6,6 +6,8 @@ import reacticon from '../assets/icons/react.png';
 import tailwindicon from '../assets/icons/tailw.png';
 import scssicon from '../assets/icons/sass.png';
 import { HashLink as Link } from "react-router-hash-link";
+import 'font-awesome/css/font-awesome.min.css';
+
 
 
 export default function About(){
@@ -23,8 +25,19 @@ export default function About(){
             <h3 className="text-black text-2xl md:text-4xl">a little bit about me</h3>
         </div>
         <div className="flex flex-col lg:flex-row  justify-between py-5 xl:p-20 h-auto ">
-            <div className="w-full lg:w-1/2 relative mb-7 lg:mb-0">
-                <p className="text-base md:text-xl">Hi there! My name is Tijana, and as i said I am a Frontend Developer. A passionate Frontend developer and web design enthusiast with an insatiable curiosity for all things web-related. As a creative mind and avid learner, I'm constantly exploring new technologies and design trends to craft immersive and user-centric digital experiences.A passionate Frontend developer and web design enthusiast with an insatiable curiosity for all things web-related. As a creative mind and avid learner, I'm constantly exploring new technologies and design trends to craft immersive and user-centric digital experiences.</p>
+            <div className="w-full lg:w-2/3 relative mb-7 lg:mb-0">
+                <p className="text-base md:text-xl">Hello there! I'm Tijana, a front-end developer with a passion for React and an 
+                occasional flair for design. When I'm not busy crafting 
+                pixel-perfect user interfaces, you'll likely find me cozying up to 
+                a cup of coffee with a keyboard under
+                 my fingertips. I'm all about that 'never-stop-learning' life, and 
+                 I thrive on the constant evolution of web technologies. Rainy days 
+                 are my secret source of creativity - there's something magical about 
+                 the pitter-patter that sparks my coding mojo. While I may not be 
+                 a professional designer, I've got a knack for crafting the visual charm of my projects. I love bringing design concepts to life and making them interactive web experiences.  Whether I'm transforming
+                  ideas into code or debugging, I'm always 
+                  up for a coding challenge and an extra shot of espresso. 
+                  Let's bring some frontend magic to your project together!</p>
                 <div className="flex gap-3 mt-6 md:mt-16 ">
                    <Link to="#portfolio" smooth><button className="px-5 md:px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">portfolio.</button></Link> 
                     <button className="px-5 md:px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">download CV.</button>

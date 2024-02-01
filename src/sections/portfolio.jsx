@@ -14,7 +14,7 @@ export default function Portfolio(){
       <div>
             <div className="w-[120px] h-[2px] bg-black mb-4"></div>
             <h3 className="text-black text-2xl md:text-4xl">personal projects</h3>
-            <p className="lg:w-1/2 mt-2 text-base md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis aspernatur sunt vitae, molestiae ex doloremque quisquam repellendus ipsam cum tempora in. Consequuntur facilis nihil, fugit natus modi sit odit.</p>
+            <p className="lg:w-1/2 mt-2 text-base md:text-xl">Here, you'll find a collection of personal projects that represent my journey as a front-end developer. From concept to execution, each project demonstrates my commitment to craftsmanship and creativity.</p>
         </div>
         <div><CardsSection /></div>
     
