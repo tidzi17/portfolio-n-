@@ -5,7 +5,7 @@ import SocialsIcons from "../components/socials"
 export default function Home(){
     return(
         <div id="home" className="w-full h-[100vh] relative">
-            <div className="transform translate-y-[30%] h-full flex flex-col absolute  md:ml-[10%]">
+            <div className="transform translate-y-[30%] h-full flex flex-col absolute px-6 lg:p-0  lg:ml-[10%]">
                 <div className="">
                     <h1 className="text-8xl text-black">Hi There! I'm Tijana,</h1>
                     <h1 className="text-8xl font-bold text-primaryGrey">Front-end Developer.</h1>

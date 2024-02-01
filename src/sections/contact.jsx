@@ -10,13 +10,13 @@ export default function Contact(){
               <div className="absolute bottom-10 left-5 right-0 ">
         <p className="text-9xl font-bold text-black opacity-5">[3]</p>
       </div>
-      <div className="w-full lg:px-28 py-28 ">
+      <div className="w-full px-6 lg:px-28 py-28 ">
       <div>
             <div className="w-[120px] h-[2px] bg-black mb-4"></div>
             <h3 className="text-black text-4xl">get in touch</h3>
         </div>
-        <div className="flex px-20 py-28 justify-between  ">
-          <div className="w-1/2 ">
+        <div className="flex flex-col lg:flex-row px-0 pt-10 xl:px-20 lg:pt-28 pb-28 justify-between  ">
+          <div className="w-full lg:w-1/2 mb-5">
             <h3 className="text-5xl">Let's build something great together!</h3>
             <p className="text-xl mt-3">Feel free to contact me. I am always open to discussing new projects, creative ideas, or collaboration opportunities that align with your vision.</p>
             <div className="mt-8">
@@ -28,7 +28,7 @@ export default function Contact(){
             </div>
             </div>
           </div>
-          <div className="w-1/3  ">
+          <div className="w-full lg:w-1/3  ">
             <Form />
           </div>
         </div>

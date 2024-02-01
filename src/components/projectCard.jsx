@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function ProjectCard({ id, title, date, image, imageID, description, techFirst, techSecond, codeurl, liveurl    }){
     const isScrollableImage = imageID !== "weather-app" && imageID !== "old-portfolio";
     return(
-        <div className="w-full h-[230px] border-[1px] border-black rounded-3xl p-4 flex flex-row gap-3 justify-between">
+        <div className="w-full h-[230px] border-[1px] border-black rounded-3xl p-4 flex flex-row gap-3 justify-between shadow-sm shadow-primaryGrey">
                {isScrollableImage ? (
                <div className="w-1/2 h-full bg-black rounded-3xl overflow-hidden cursor-pointer">
                    <Link to={liveurl} target="blank"><img src={image} alt="" className="grayscale w-full h-auto transform translate-x-0 transition duration-[10s] ease-in-out hover:-translate-y-[1300px] " /></Link>
@@ -25,11 +25,11 @@ export default function ProjectCard({ id, title, date, image, imageID, descripti
                 <p className="text-sm mt-1">{description}</p>
                 <p className="text-base mt-1">Stack: <span>{techFirst}</span> <span>{techSecond}</span></p>
                 <div className="flex gap-5 mt-auto">
-                    <div className="flex items-center">
+                    <div className="flex gap-2 items-center">
                        <a href={codeurl} target="blank"><FaGithubSquare className="text-3xl transform ease-in duration-300 hover:scale-110"/></a> 
                         <p className="text-lg">code</p>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex gap-2 items-center">
                         <a href={liveurl} target="blank"><RiExternalLinkLine  className="text-3xl transform ease-in duration-300 hover:scale-110"/></a>
                         <p className="text-lg">preview</p>
                     </div>

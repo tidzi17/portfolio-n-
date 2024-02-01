@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from "react";
 import { useFormik } from "formik";
 import { formSchema } from "./formSchema";
@@ -16,7 +15,8 @@ const Form = () => {
             actions.resetForm();
             setIsSubmitted(true);
         } catch (error) {
-            // Handle error
+            console.error('Error submitting form:', error);
+            actions.setSubmitting(false);
         }
     };
 

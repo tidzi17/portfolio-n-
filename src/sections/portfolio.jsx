@@ -10,7 +10,7 @@ export default function Portfolio(){
               <div className="absolute bottom-10 left-5 right-0 ">
         <p className="text-9xl font-bold text-black opacity-5">[2]</p>
       </div>
-      <div className="w-full px-28  py-28 ">
+      <div className="w-full px-6 lg:px-28  py-28 ">
       <div>
             <div className="w-[120px] h-[2px] bg-black mb-4"></div>
             <h3 className="text-black text-4xl">personal projects</h3>
