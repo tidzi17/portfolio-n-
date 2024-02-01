@@ -19,22 +19,22 @@ export default function About(){
       </div>
       <div className="px-6 lg:px-28 py-28">
         <div>
-            <div className="w-[120px] h-[2px] bg-black mb-4"></div>
-            <h3 className="text-black text-4xl">a little bit about me</h3>
+            <div className="w-[80px] md:w-[120px] h-[2px] bg-black mb-4"></div>
+            <h3 className="text-black text-2xl md:text-4xl">a little bit about me</h3>
         </div>
-        <div className="flex  justify-around p-20 h-auto ">
-            <div className="w-1/2 relative">
-                <p className="text-xl">Hi there! My name is Tijana, and as i said I am a Frontend Developer. A passionate Frontend developer and web design enthusiast with an insatiable curiosity for all things web-related. As a creative mind and avid learner, I'm constantly exploring new technologies and design trends to craft immersive and user-centric digital experiences.A passionate Frontend developer and web design enthusiast with an insatiable curiosity for all things web-related. As a creative mind and avid learner, I'm constantly exploring new technologies and design trends to craft immersive and user-centric digital experiences.</p>
-                <div className="flex gap-3 mt-16 ">
-                   <Link to="#portfolio" smooth><button className="px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">portfolio.</button></Link> 
-                    <button className="px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">download CV.</button>
+        <div className="flex flex-col lg:flex-row  justify-between py-5 xl:p-20 h-auto ">
+            <div className="w-full lg:w-1/2 relative mb-7 lg:mb-0">
+                <p className="text-base md:text-xl">Hi there! My name is Tijana, and as i said I am a Frontend Developer. A passionate Frontend developer and web design enthusiast with an insatiable curiosity for all things web-related. As a creative mind and avid learner, I'm constantly exploring new technologies and design trends to craft immersive and user-centric digital experiences.A passionate Frontend developer and web design enthusiast with an insatiable curiosity for all things web-related. As a creative mind and avid learner, I'm constantly exploring new technologies and design trends to craft immersive and user-centric digital experiences.</p>
+                <div className="flex gap-3 mt-6 md:mt-16 ">
+                   <Link to="#portfolio" smooth><button className="px-5 md:px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">portfolio.</button></Link> 
+                    <button className="px-5 md:px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">download CV.</button>
                 </div>
             </div>
             <div className=" ">
-                <h3 className=" text-black text-4xl">tech stack:</h3>
+                <h3 className=" text-black text-2xl md:text-4xl">tech stack:</h3>
                 <div className="grid grid-cols-3 grid-rows-2 gap-10 w-fit mt-7">
                 {stack.map((icon, index) => (
-                    <img key={index} src={icon} alt={`Icon ${index}`} className="w-[64px] transform duration-200 ease-in hover:scale-105"/>
+                    <img key={index} src={icon} alt={`Icon ${index}`} className="w-[48px] md:w-[64px] transform duration-200 ease-in hover:scale-105"/>
                 ))}
                 </div>
             </div>
