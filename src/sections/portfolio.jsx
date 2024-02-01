@@ -6,7 +6,7 @@ export default function Portfolio(){
 
   
     return(
-        <div id="portfolio" className="w-full  border-[1px] border-black relative">
+        <div id="portfolio" className="w-full  border-t-[1px]  border-b-[1px] border-black relative">
               <div className="absolute bottom-10 left-5 right-0 ">
         <p className="text-9xl font-bold text-black opacity-5">[2]</p>
       </div>

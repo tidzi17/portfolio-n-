@@ -20,7 +20,7 @@ export default function Navbar(){
         };
       }, []);
       const border = scrollPosition > 600 ? 'black' : 'transparent';
-      const bgColor = scrollPosition > 600 ? '#f8eeee' : 'transparent';
+      const bgColor = scrollPosition > 600 ? '#F6EEEE' : 'transparent';
 
     return(
         <div id="navbar" className="absolute">
