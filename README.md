@@ -1,5 +1,5 @@
 <h1>New Personal Portfolio</h1>
-Live Demo: <a href=['https://tijanadjportfolio.vercel.app/](https://tijanadjportfolio.vercel.app/)'>Portfolio</a> <br>
+Live Demo: <a href='https://tijanadjportfolio.vercel.app/'>Portfolio</a> <br>
 » React JS <br>
 » TailwindCSS
 
