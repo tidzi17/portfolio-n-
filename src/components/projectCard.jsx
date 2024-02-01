@@ -25,14 +25,14 @@ export default function ProjectCard({ id, title, date, image, imageID, descripti
                 <p className="text-xs md:text-sm mt-1">{description}</p>
                 <p className="text-base mt-1">Stack: <span>{techFirst}</span> <span>{techSecond}</span></p>
                 <div className="flex gap-5 mt-auto">
-                    <div className="flex gap-2 items-center">
-                       <a href={codeurl} target="blank"><FaGithubSquare className="text-3xl transform ease-in duration-300 hover:scale-110"/></a> 
+                <a href={codeurl} target="blank"><div className="flex gap-2 items-center">
+                      <FaGithubSquare className="text-3xl transform ease-in duration-300 hover:scale-110"/>
                         <p className="text-lg">code</p>
-                    </div>
-                    <div className="flex gap-2 items-center">
-                        <a href={liveurl} target="blank"><RiExternalLinkLine  className="text-3xl transform ease-in duration-300 hover:scale-110"/></a>
+                    </div></a> 
+                    <a href={liveurl} target="blank"> <div className="flex gap-2 items-center">
+                        <RiExternalLinkLine  className="text-3xl transform ease-in duration-300 hover:scale-110"/>
                         <p className="text-lg">preview</p>
-                    </div>
+                    </div></a>
                 </div>
             </div>
         </div>
