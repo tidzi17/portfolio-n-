@@ -7,9 +7,9 @@ export default function Home(){
         <div id="home" className="w-full h-[100vh] relative">
             <div className="transform translate-y-[30%] h-full flex flex-col absolute px-6 lg:p-0  lg:ml-[10%]">
                 <div className="">
-                    <h1 className="text-5xl lg:text-8xl text-black">Hi There! I'm Tijana,</h1>
-                    <h1 className="text-5xl lg:text-8xl font-bold text-primaryGrey">Front-end Developer.</h1>
-                    <p className="text-base lg:text-xl text-black mt-3 lg:w-2/3">A passionate front-end developer and web design enthusiast with an insatiable curiosity for all things web-related. As a creative mind and avid learner, I am constantly exploring new technologies and design trends to craft immersive and user-centric digital experiences.</p>
+                    <h1 className="text-3xl md:text-5xl lg:text-8xl text-black">Hi There! I'm Tijana,</h1>
+                    <h1 className="text-3xl md:text-5xl lg:text-8xl font-bold text-primaryGrey">Front-end Developer.</h1>
+                    <p className="text-sm md:text-base lg:text-xl text-black mt-3 lg:w-2/3">A passionate front-end developer and web design enthusiast with an insatiable curiosity for all things web-related. As a creative mind and avid learner, I am constantly exploring new technologies and design trends to craft immersive and user-centric digital experiences.</p>
                 </div>
                 <div className="mt-10 md:mt-20">
                 <Link  to="#portfolio" smooth><Button text="Check out my work"/></Link> 
