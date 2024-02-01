@@ -40,7 +40,7 @@ export default function About(){
                   Let's bring some frontend magic to your project together!</p>
                 <div className="flex gap-3 mt-6 md:mt-16 ">
                    <Link to="#portfolio" smooth><button className="px-5 md:px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">portfolio.</button></Link> 
-                    <button className="px-5 md:px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">download CV.</button>
+                    <button  className="px-5 md:px-7 py-2 cursor-not-allowed bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm  transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">download CV.</button>
                 </div>
             </div>
             <div className=" ">
