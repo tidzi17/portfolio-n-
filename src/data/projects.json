@@ -29,7 +29,7 @@
             "date": "sep. 2023",
             "image": "/projectsimg/oldportfolio.png",
             "imageID": "old-portfolio",
-            "description": "This project reflects my initial exploration into web development, capturing the essence of my early ideas and aspirations. While it may not align with my current vision, it serves as a valuable milestone in my journey of learning and growth as a frontend developer.",
+            "description": "Represents my early foray into web development, embodying initial ideas and aspirations. Though divergent from my current vision, it marks a significant step in my journey of learning and growth as a frontend developer.",
             "techFirst": "React.js",
             "techSecond": "SCSS",
             "codeurl": "https://github.com/tidzi17/portfolio",

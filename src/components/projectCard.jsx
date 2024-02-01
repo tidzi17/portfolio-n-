@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function ProjectCard({ id, title, date, image, imageID, description, techFirst, techSecond, codeurl, liveurl    }){
     const isScrollableImage = imageID !== "weather-app" && imageID !== "old-portfolio";
     return(
-        <div className="w-full h-[400px] md:h-[230px] border-[1px] border-black rounded-3xl p-4 flex flex-col md:flex-row gap-3 justify-between shadow-sm shadow-primaryGrey">
+        <div className="w-full h-[400px] md:h-[260px] border-[1px] border-black rounded-3xl p-4 flex flex-col md:flex-row gap-3 justify-between shadow-sm shadow-primaryGrey">
                {isScrollableImage ? (
                <div className="w-full md:w-1/2 h-full bg-black rounded-3xl overflow-hidden cursor-pointer">
                    <Link to={liveurl} target="blank"><img src={image} alt="" className="grayscale w-full h-auto transform translate-x-0 transition duration-[10s] ease-in-out hover:-translate-y-[1300px] " /></Link>
