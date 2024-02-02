@@ -6,9 +6,24 @@ import reacticon from '../assets/icons/react.png';
 import tailwindicon from '../assets/icons/tailw.png';
 import scssicon from '../assets/icons/sass.png';
 import { HashLink as Link } from "react-router-hash-link";
-import 'font-awesome/css/font-awesome.min.css';
+import { motion } from 'framer-motion';
 
-
+const fadeInAnimationVariants = {
+    initial: {
+        opacity: 0,
+        y: 100,
+    },
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: 0.05,
+            duration: 0.5,
+            ease: "easeInOut",
+          
+        }
+    },
+};
 
 export default function About(){
 
@@ -24,7 +39,15 @@ export default function About(){
             <div className="w-[80px] md:w-[120px] h-[2px] bg-black mb-4"></div>
             <h3 className="text-black text-2xl md:text-4xl">a little bit about me</h3>
         </div>
-        <div className="flex flex-col lg:flex-row  justify-between py-5 xl:p-20 h-auto ">
+        <motion.div
+         className="flex flex-col lg:flex-row ease-out  justify-between py-5 xl:p-20 h-auto "
+         variants={fadeInAnimationVariants}
+         initial="initial"
+         whileInView="animate"
+         viewport={
+           {once: true} 
+         }
+         >
             <div className="w-full lg:w-2/3 relative mb-7 lg:mb-0">
                 <p className="text-base md:text-xl">Hello there! I'm Tijana, a front-end developer with a passion for React and an 
                 occasional flair for design. When I'm not busy crafting 
@@ -51,7 +74,7 @@ export default function About(){
                 ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
       </div>
       
         </div>

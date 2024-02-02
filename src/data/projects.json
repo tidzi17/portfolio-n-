@@ -13,7 +13,7 @@
         },
    
         {
-            "id" :3,
+            "id" :2,
             "title": "Real Estate",
             "date": "sep. 2023",
             "image": "/projectsimg/harmony.png",
@@ -24,7 +24,7 @@
             "liveurl": "https://harmony-real-estate.vercel.app/"
         },
         {
-            "id" :4,
+            "id" :3,
             "title": "First Portfolio Concept",
             "date": "sep. 2023",
             "image": "/projectsimg/oldportfolio.png",
@@ -36,7 +36,7 @@
             "liveurl": "https://tijanadj.vercel.app/"
         },
         {
-            "id" :2,
+            "id" :4,
             "title": "Weather App",
             "date": "nov. 2023",
             "image": "/projectsimg/weather-app.png",

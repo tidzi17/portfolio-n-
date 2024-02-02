@@ -27,6 +27,7 @@ export default function Navbar(){
             <nav style={{ borderBottom: '1px solid ' + border, backgroundColor: bgColor }} className="w-full fixed z-20 flex justify-between px-6 items-center py-3 xl:pb-3 xl:pt-5 xl:px-28">
             <div>
                 <Link to='#home' smooth className="font-bold text-7xl">t.</Link>
+              
             </div>
             <div className="">
             <div className="hidden md:flex gap-6 ">

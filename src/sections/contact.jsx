@@ -2,6 +2,39 @@ import Form from "../components/form"
 import mailicon from '../assets/icons/email.png';
 import giticon from '../assets/icons/github.png';
 import linkedicon from '../assets/icons/linkedin.png';
+import { motion } from 'framer-motion';
+
+const fadeInAnimationVariantsLeft = {
+    initial: {
+        opacity: 0,
+        x: -100,
+    },
+    animate: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            delay: 0.5,
+            duration: 0.5,
+            ease: "easeInOut",
+        }
+    },
+};
+
+const fadeInAnimationVariantsRight = {
+    initial: {
+        opacity: 0,
+        x: 100,
+    },
+    animate: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            delay: 0.5,
+            duration: 0.5,
+            ease: "easeInOut",
+        }
+    },
+};
 
 
 export default function Contact(){
@@ -16,7 +49,14 @@ export default function Contact(){
             <h3 className="text-black text-2xl md:text-4xl">get in touch</h3>
         </div>
         <div className="flex flex-col lg:flex-row px-0 pt-10 xl:px-20 lg:pt-28 pb-28 justify-between  ">
-          <div className="w-full lg:w-1/2 mb-3 md:mb-5">
+          <motion.div
+           className="w-full lg:w-1/2 mb-3 md:mb-5"
+           variants={fadeInAnimationVariantsLeft}
+           initial="initial"
+           whileInView="animate"
+          /*  viewport={
+             {once: true} 
+           } */>
             <h3 className="text-3xl md:text-5xl">Let's build something great together!</h3>
             <p className="text-base md:text-xl mt-3">Feel free to contact me. I am always open to discussing new projects, creative ideas, or collaboration opportunities that align with your vision.</p>
             <div className="mt-8">
@@ -27,10 +67,17 @@ export default function Contact(){
               <a href='mailto:tidzi15110@gmail.com' target='blank'><img src={mailicon} alt="" className='cursor-pointer w-[28px] md:w-[32px] hover:scale-105'/></a>  
             </div>
             </div>
-          </div>
-          <div className="w-full lg:w-1/3  ">
+          </motion.div>
+          <motion.div
+           className="w-full lg:w-1/3"
+           variants={fadeInAnimationVariantsRight}
+           initial="initial"
+           whileInView="animate"
+           viewport={
+             {once: true} 
+           }>
             <Form />
-          </div>
+          </motion.div>
         </div>
       </div>
         </div>

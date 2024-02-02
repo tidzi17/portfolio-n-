@@ -3,13 +3,37 @@ import { RiExternalLinkLine } from "react-icons/ri";
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
+
+const fadeInAnimationVariants = {
+    initial: (index) => ({
+        opacity: 0,
+        x: index % 2 === 0 ? -100 : 100,
+    }),
+    animate: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            delay: 0.4,
+            duration: 0.5,
+            ease: "easeInOut",
+        }
+    },
+};
 
 
 
-export default function ProjectCard({ id, title, date, image, imageID, description, techFirst, techSecond, codeurl, liveurl    }){
+export default function ProjectCard({ id, title, date, image, imageID, description, techFirst, techSecond, codeurl, liveurl, index    }){
     const isScrollableImage = imageID !== "weather-app" && imageID !== "old-portfolio";
     return(
-        <div className="w-full h-[400px] md:h-[260px] border-[1px] border-black rounded-3xl p-4 flex flex-col md:flex-row gap-3 justify-between shadow-sm shadow-primaryGrey">
+        <motion.div className="w-full h-[400px] md:h-[260px] border-[1px] border-black rounded-3xl p-4 flex flex-col md:flex-row gap-3 justify-between shadow-sm shadow-primaryGrey"
+        variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            custom={id}
+              viewport={
+                    {once: true} 
+                  }>
                {isScrollableImage ? (
                <div className="w-full md:w-1/2 h-full bg-black rounded-3xl overflow-hidden cursor-pointer">
                    <Link to={liveurl} target="blank"><img src={image} alt="" className="grayscale w-full h-auto transform translate-x-0 transition duration-[10s] ease-in-out hover:-translate-y-[1300px] " /></Link>
@@ -35,7 +59,7 @@ export default function ProjectCard({ id, title, date, image, imageID, descripti
                     </div></a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
