@@ -1,6 +1,6 @@
+import React  from "react";
 import { FaGithubSquare } from "react-icons/fa";
 import { RiExternalLinkLine } from "react-icons/ri";
-import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
@@ -25,6 +25,7 @@ const fadeInAnimationVariants = {
 
 export default function ProjectCard({ id, title, date, image, imageID, description, techFirst, techSecond, codeurl, liveurl, index    }){
     const isScrollableImage = imageID !== "weather-app" && imageID !== "old-portfolio";
+
     return(
         <motion.div className="w-full h-[400px] md:h-[260px] border-[1px] border-black rounded-3xl p-4 flex flex-col md:flex-row gap-3 justify-between shadow-sm shadow-primaryGrey"
         variants={fadeInAnimationVariants}
@@ -36,7 +37,7 @@ export default function ProjectCard({ id, title, date, image, imageID, descripti
                   }>
                {isScrollableImage ? (
                <div className="w-full md:w-1/2 h-full bg-black rounded-3xl overflow-hidden cursor-pointer">
-                   <Link to={liveurl} target="blank"><img src={image} alt="" className="grayscale w-full h-auto transform translate-x-0 transition duration-[10s] ease-in-out hover:-translate-y-[1300px] " /></Link>
+                   <Link to={liveurl} target="blank"><img src={image} alt=""  id="img" className="grayscale w-full h-auto transform translate-x-0 transition duration-[10s] ease-in-out hover:-translate-y-[1300px] "   /></Link>
                 </div>
                 
             ) : (
@@ -45,7 +46,7 @@ export default function ProjectCard({ id, title, date, image, imageID, descripti
                 </div>
             )}
             <div className="w-full md:w-1/2 flex flex-col items-center text-center">
-                <h4 className="font-bold">{title}</h4>
+                <h4 className="font-bold">{title} <span className="text-zinc-600">[{date}]</span></h4>
                 <p className="text-xs md:text-sm mt-1">{description}</p>
                 <p className="text-base mt-1">Stack: <span>{techFirst}</span> <span>{techSecond}</span></p>
                 <div className="flex gap-5 mt-auto">

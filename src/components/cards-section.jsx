@@ -4,14 +4,18 @@ import data from '../data/projects.json';
 
 
 
+
 export default function CardsSection() {
+  const projectsMobile = data.projects.filter(project => [1, 4, 2, 3, 5].includes(project.id));
+  const orderedProjects = projectsMobile.sort((a, b) => [1, 4, 2, 3, 5].indexOf(a.id) - [1, 4, 2, 3, 5].indexOf(b.id));
+
  
 
   return (
     <div id="cardssection" className="w-full relative overflow-hidden">
-      <div className="w-full flex flex-col lg:flex-row gap-7 justify-between py-20">
+      <div className="hidden  w-full lg:flex flex-col lg:flex-row gap-7 justify-between py-20">
         <div className="flex flex-col items-center gap-10 lg:gap-40">
-        {data.projects.slice(0, 3).map((project, index) => (
+        {data.projects.slice(0, 2 && 3, 5).map((project, index) => (
               <ProjectCard key={index} index={index} {...project} />
             ))}
         </div>
@@ -21,6 +25,13 @@ export default function CardsSection() {
         {data.projects.slice(3, 5).map((project, index) => (
               <ProjectCard key={index} index={index} {...project} />
             ))}
+        </div>
+      </div>
+     <div className="lg:hidden w-full  flex-col lg:flex-row gap-7 justify-between py-20">
+        <div className="flex flex-col items-center gap-10 lg:gap-40">
+        {orderedProjects.map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                    ))}
         </div>
       </div>
       <p className="text-4xl">new projects coming soon</p>
