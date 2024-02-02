@@ -39,7 +39,7 @@ const fadeInAnimationVariantsRight = {
 
 export default function Contact(){
     return(
-        <div id="contact" className="w-full  relative">
+        <div id="contact" className="w-full  relative overflow-hidden">
               <div className="absolute bottom-10 left-5 right-0 ">
         <p className="text-9xl font-bold text-black opacity-5">[3]</p>
       </div>

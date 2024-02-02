@@ -8,7 +8,7 @@ export default function CardsSection() {
  
 
   return (
-    <div id="cardssection" className="w-full relative">
+    <div id="cardssection" className="w-full relative overflow-hidden">
       <div className="w-full flex flex-col lg:flex-row gap-7 justify-between py-20">
         <div className="flex flex-col items-center gap-10 lg:gap-40">
         {data.projects.slice(0, 3).map((project, index) => (
