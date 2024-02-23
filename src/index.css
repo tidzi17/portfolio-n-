@@ -10,14 +10,14 @@
 body{
   font-family: 'Lekton';
   background-color: #F6EEEE;
+  scroll-behavior: smooth;
+  
 }
 #home{
   background-image: url(../src//assets/homebgg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
- 
 }
 
 ::-webkit-scrollbar {

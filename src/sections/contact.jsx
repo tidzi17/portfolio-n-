@@ -24,7 +24,6 @@ export default function Contact(){
           <MotionDiv
            className="w-full lg:w-1/2 mb-3 md:mb-5"
            animationVariants={SlideXLeft}
-           whileInView="animate"
            viewport={
              {once: true} 
            }>
