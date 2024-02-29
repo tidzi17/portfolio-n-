@@ -47,7 +47,7 @@ const Form = () => {
                         name="name"
                         id="name"
                         placeholder="your first & last name"
-                        className="w-full h-full bg-white  placeholder:pl-3 outline-none"
+                        className="pl-3 w-full h-full bg-white   outline-none"
                     />
                     {errors.name && touched.name && <p className="absolute bottom-[-25px] text-black text-sm font-bold">{errors.name}</p>}
                 </div>
@@ -61,7 +61,7 @@ const Form = () => {
                         name="email"
                         id="email"
                         placeholder="your email"
-                        className="w-full h-full bg-white  placeholder:pl-3 outline-none"
+                        className="pl-3 w-full h-full bg-white   outline-none"
                     />
                     {errors.email && touched.email && <p className="absolute bottom-[-25px] text-black text-sm font-bold">{errors.email}</p>}
                 </div>
@@ -75,7 +75,7 @@ const Form = () => {
                         name="message"
                         id="message"
                         placeholder="your message"
-                        className="w-full h-full resize-none placeholder:pl-3 placeholder:pt-3 outline-none"></textarea>
+                        className="w-full h-full resize-none pl-3 placeholder:mt-3 outline-none"></textarea>
                     {errors.message && touched.message && <p className="absolute bottom-[-25px] text-black text-sm font-bold">{errors.message}</p>}
                 </div>
                 <button disabled={isSubmitting} type="submit" className="w-2/5 px-1 py-2 shadow-sm shadow-primaryGrey bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">send message</button>
