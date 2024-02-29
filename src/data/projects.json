@@ -37,6 +37,18 @@
         },
         {
             "id" :4,
+            "title": "E-commerce",
+            "date": "feb. 2024",
+            "image": "/projectsimg/ecommerce.png",
+            "imageID": "ecommerce",
+            "description": "A comprehensive project featuring an eCommerce platform for cosmetics alongside a blog. Seamlessly browse and purchase beauty products while staying informed with engaging beauty-related content.",
+            "techFirst": "React.js",
+            "techSecond": "TailwindCSS",
+            "codeurl": "https://github.com/tidzi17/e-commerce-project",
+            "liveurl": "https://purely.vercel.app/"
+        },
+        {
+            "id" :5,
             "title": "Weather App",
             "date": "nov. 2023",
             "image": "/projectsimg/weather-app.png",
@@ -48,7 +60,7 @@
             "liveurl": "https://weatherby.vercel.app/"
         },
         {
-            "id":5,
+            "id":6,
             "title": "Rent a car",
             "date": "jul. 2023",
             "image": "/projectsimg/carrental.png",
