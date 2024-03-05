@@ -16,7 +16,7 @@
             "title": "Landing Page",
             "date": "feb. 2024",
             "image": "/projectsimg/landing.png",
-            "description": "Interior design landing page, developed meticulously from a Figma design. It serves as a showcase for attention to detail and commitment to bringing design concepts to life in the digital realm.",
+            "description": "Interior design landing page, developed meticulously from a Figma design. It serves as a showcase for attention to detail and commitment to bringing design concepts to life.",
             "techFirst": "React.js",
             "techSecond": "SCSS",
             "codeurl": "https://github.com/tidzi17/landing-page-interiorDesign",
