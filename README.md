@@ -7,5 +7,5 @@ Live Demo: <a target="blank"  href='https://tijanadjportfolio.vercel.app/'>Portf
   <h2>Portfolio Screenshot</h2>
 
 
-<img src='public/portfolioscreen.png'/>
+
 
