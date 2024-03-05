@@ -46,7 +46,7 @@ export default function ProjectCard({ id, title, date, image, imageID, descripti
                 </div>
             )}
             <div className="w-full md:w-1/2 flex flex-col items-center text-center">
-                <h4 className="font-bold">{title} <span className="text-zinc-600">[{date}]</span></h4>
+                <h4 className="font-bold">{title} {/* <span className="text-zinc-600">[{date}]</span> */}</h4>
                 <p className="text-xs md:text-sm mt-1">{description}</p>
                 <p className="text-base mt-1">Stack: <span>{techFirst}</span> <span>{techSecond}</span></p>
                 <div className="flex gap-5 mt-auto">

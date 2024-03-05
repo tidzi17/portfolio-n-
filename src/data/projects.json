@@ -11,9 +11,20 @@
             "codeurl": "https://github.com/tidzi17/barbers-shop",
             "liveurl": "https://barbers-shop.vercel.app/"
         },
-   
         {
             "id" :2,
+            "title": "Landing Page",
+            "date": "feb. 2024",
+            "image": "/projectsimg/landing.png",
+            "description": "Interior design landing page, developed meticulously from a Figma design. It serves as a showcase for attention to detail and commitment to bringing design concepts to life in the digital realm.",
+            "techFirst": "React.js",
+            "techSecond": "SCSS",
+            "codeurl": "https://github.com/tidzi17/landing-page-interiorDesign",
+            "liveurl": "https://liam-brooks-landingpage.vercel.app/"
+        },
+   
+        {
+            "id" :5,
             "title": "Real Estate",
             "date": "sep. 2023",
             "image": "/projectsimg/harmony.png",
@@ -23,18 +34,7 @@
             "codeurl": "https://github.com/tidzi17/real-estate-project",
             "liveurl": "https://harmony-real-estate.vercel.app/"
         },
-        {
-            "id" :3,
-            "title": "First Portfolio Concept",
-            "date": "sep. 2023",
-            "image": "/projectsimg/oldportfolio.png",
-            "imageID": "old-portfolio",
-            "description": "Represents my early foray into web development, embodying initial ideas and aspirations. Though divergent from my current vision, it marks a significant step in my journey of learning and growth as a frontend developer.",
-            "techFirst": "React.js",
-            "techSecond": "SCSS",
-            "codeurl": "https://github.com/tidzi17/portfolio",
-            "liveurl": "https://tijanadj.vercel.app/"
-        },
+   
         {
             "id" :4,
             "title": "E-commerce",
@@ -48,7 +48,7 @@
             "liveurl": "https://purely.vercel.app/"
         },
         {
-            "id" :5,
+            "id" :3,
             "title": "Weather App",
             "date": "nov. 2023",
             "image": "/projectsimg/weather-app.png",
@@ -60,7 +60,19 @@
             "liveurl": "https://weatherby.vercel.app/"
         },
         {
-            "id":6,
+            "id" :6,
+            "title": "First Portfolio Concept",
+            "date": "sep. 2023",
+            "image": "/projectsimg/oldportfolio.png",
+            "imageID": "old-portfolio",
+            "description": "Represents my early foray into web development, embodying initial ideas and aspirations. Though divergent from my current vision, it marks a significant step in my journey of learning and growth as a frontend developer.",
+            "techFirst": "React.js",
+            "techSecond": "SCSS",
+            "codeurl": "https://github.com/tidzi17/portfolio",
+            "liveurl": "https://tijanadj.vercel.app/"
+        },
+        {
+            "id":7,
             "title": "Rent a car",
             "date": "jul. 2023",
             "image": "/projectsimg/carrental.png",
