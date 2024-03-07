@@ -7,7 +7,7 @@ import data from '../data/projects.json';
 
 export default function CardsSection() {
   const projectsMobile = data.projects.filter(project => [1, 2, 3, 4, 5].includes(project.id));
-  const orderedProjects = projectsMobile.sort((a, b) => [1, 5, 2, 6, 3, 4].indexOf(a.id) - [1, 2, 3, 4, 5].indexOf(b.id));
+  const orderedProjects = projectsMobile.sort((a, b) => [1, 4, 2, 3, 5].indexOf(a.id) - [1, 2, 3, 4, 5].indexOf(b.id));
 
  
 
