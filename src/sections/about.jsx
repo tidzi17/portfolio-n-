@@ -36,7 +36,7 @@ export default function About(){
                 pixel-perfect user interfaces, you'll likely find me cozying up to 
                 a cup of coffee with a keyboard under
                  my fingertips. I'm all about that 'never-stop-learning' life, and 
-                 I thrive on the constant evolution of web technologies.</p>
+                 I thrive on the constant evolution of web technologies. I love bringing design concepts to life and making them interactive web experiences. Whether I'm transforming ideas into code or debugging, I'm always up for a coding challenge and an extra shot of espresso. Let's bring some frontend magic to your project together!</p>
                 <div className="flex gap-3 mt-6 md:mt-16 ">
                    <Link to="#portfolio" smooth><button className="px-5 md:px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">portfolio.</button></Link> 
                     <a href={resume}
