@@ -39,7 +39,10 @@ export default function About(){
                  I thrive on the constant evolution of web technologies.</p>
                 <div className="flex gap-3 mt-6 md:mt-16 ">
                    <Link to="#portfolio" smooth><button className="px-5 md:px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">portfolio.</button></Link> 
-                    <a href={resume} download="TijanaDjudjicCV"
+                    <a href={resume}
+                     download="TijanaDjudjicCV"
+                     rel="noopener noreferrer"
+                     target="blank"
                       className="px-5 md:px-7 py-2  bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm  transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black"
                       >download CV.
                       </a>
