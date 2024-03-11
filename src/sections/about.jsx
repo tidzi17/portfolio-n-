@@ -8,6 +8,7 @@ import scssicon from '../assets/icons/sass.png';
 import { HashLink as Link } from "react-router-hash-link";
 import MotionDiv from '../components/animation';
 import { SlideY } from '../components/animation'; 
+import resume from '../assets/cv/TijanaDjudjicCV.pdf'
 
 export default function About(){
 
@@ -38,7 +39,10 @@ export default function About(){
                  I thrive on the constant evolution of web technologies.</p>
                 <div className="flex gap-3 mt-6 md:mt-16 ">
                    <Link to="#portfolio" smooth><button className="px-5 md:px-7 py-2 bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm cursor-pointer transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">portfolio.</button></Link> 
-                    <button  className="px-5 md:px-7 py-2 cursor-not-allowed bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm  transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black">download CV.</button>
+                    <a href={resume} download="TijanaDjudjicCV"
+                      className="px-5 md:px-7 py-2  bg-secondaryGrey text-white border-[1px] border-black rounded-3xl text-sm  transform duration-200 ease-in hover:bg-whitebgsec   hover:text-black"
+                      >download CV.
+                      </a>
                 </div>
             </div>
             <div className="xl:-mt-16 ">
