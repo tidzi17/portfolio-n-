@@ -8,7 +8,7 @@ import scssicon from '../assets/icons/sass.png';
 import { HashLink as Link } from "react-router-hash-link";
 import MotionDiv from '../components/animation';
 import { SlideY } from '../components/animation'; 
-import resume from '../assets/cv/TijanaDjudjicCV.pdf'
+import resume from '../assets/cv/TijanaDjudjicCV1.pdf'
 
 export default function About(){
 
@@ -31,7 +31,7 @@ export default function About(){
       
          >
             <div className="w-full lg:w-2/3 relative mb-7 lg:mb-0">
-                <p className="text-base md:text-xl">HI! My name is Tijana, and I am a front-end developer with a passion for React and an 
+                <p className="text-base md:text-xl">Hi! My name is Tijana, and I am a front-end developer with a passion for React and an 
                 occasional flair for design. When I'm not busy crafting 
                 pixel-perfect user interfaces, you'll likely find me cozying up to 
                 a cup of coffee with a keyboard under
