@@ -8,7 +8,7 @@ import scssicon from '../assets/icons/sass.png';
 import { HashLink as Link } from "react-router-hash-link";
 import MotionDiv from '../components/animation';
 import { SlideY } from '../components/animation'; 
-import resume from '../assets/cv/CVE2.pdf';
+import resume from '../assets/cv/TijanaDjudjicResume.pdf';
 
 export default function About(){
 
