@@ -9,7 +9,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import MotionDiv from '../components/animation';
 import { SlideY } from '../components/animation'; 
 /*import resume from '../assets/cv/TijanaDjudjicResumeES1.pdf';*/
-/*CV removed*/
+
 
 export default function About(){
 
